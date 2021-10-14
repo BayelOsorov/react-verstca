@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bg {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+#Capa_1 {
+    width: 100px;
+    animation: dvd-move 9s linear 100;
+}
+
+@keyframes dvd-move {
+    0% {
+        transform: translate(0vw, 50vh);
+        fill: white;
+    }
+    25% {
+        transform: translate(40vw, 81vh);
+        fill: yellow;
+    }
+    50% {
+        transform: translate(92vw, 30vh);
+        fill: green;
+    }
+    75% {
+        transform: translate(40vw, 0);
+        fill: red;
+    }
+    100% {
+        transform: translate(0vw, 50vh);
+        fill: white;
+    }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        border: 2px solid #000;
+        text-align: left;
+    }
+
+    th,
+    td {
+        border: 1px solid lightcoral;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <!-- Блок -->
+    <!-- Должент отвечать на вопрос: chto eto?-->
+    <!-- verno -->
+    <div class="warning"></div>
+    <!-- NEverno -->
+    <div class="yellow-warning"></div>
+    <div class="nav-lef">
+        <div class="logo">
+
+        </div>
+    </div>
+    <!-- Elementy -->
+    <!-- imya elementa otdelyaetsya ot imeni blocka devmya  __ -->
+    <form action="search-form">
+        <input class="search-form__input" type="text">
+        <button class="search-form__btn"></button>
+    </form>
+    <!-- Елемент всегда часть блокаб ф не другого элемента -->
+    <form class="search-form">
+        <div class="search-form__content">
+            <!-- cпосоп 1 -->
+            <input class="search-form__input" type="text">
+            <button class="search-form__btn"></button>
+            <!-- способ 2 -->
+            <input class="search-form__content-input" type="text">
+            <button class="search-form__content-btn"></button>
+        </div>
+    </form>
+    <!-- Элемент необязательный компонент блокаб
+    не у всех блоков дожны быть элементы -->
+
+    <!-- <form class="search-form"></form> NEverno
+<input class="search-form__input" type="text"> -->
+    <form class="search-form">
+        <input class="input" type="text">
+        <button class="btn">Search</button>
+    </form>
+    <!-- МОдификатор  -->
+
+    <!-- Должент отвечать на вопрос: какой .как выглядить  -->
+
+    <!-- imya elementa otdelyaetsya ot imeni blocka _ -->
+
+    <!-- Типы модификаторв булевый и ключ-заключение -->
+
+    <!-- Булевый -->
+    <div class="make-order">
+        <button class="make-order__btn make-order__btn_disabled"></button>
+    </div>
+
+    <!-- Ключ значение -->
+
+    <div class="make-order">
+        <button class="make-order__btn make-order__btn_color_red">Сделать заказ</button>
+    </div>
+    <div class="description">
+        <p class="description__p
+    description__p_color_green
+    description__p_fsz_24 "></p>
+    </div>
+
+    <!-- Невозможно одновременно использовать два разных модиф с разными значениями -->
+    <!-- NEverno -->
+    <div class="description">
+        <p class="description__p
+    description__p_fw_700
+    description__p_fw_400"></p>
+    </div>
+
+    <input type="text" placeholder="Enter name">
+    <input type="password">
+    <input type="tel" placeholder="enter phone">
+    <input type="email">
+    <input type="number">
+    <input type="chekbox">
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    name
+                </th>
+                <th>
+                    price
+                </th>
+                <th>
+                    count </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ball</td>
+                <td>300</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ball-nike</td>
+                <td>600</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ball-adidas</td>
+                <td>700</td>
+                <td>14</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>#</td>
+                <th>Total</th>
+                <td>344</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

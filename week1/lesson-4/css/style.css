@@ -1,0 +1,136 @@
+/* <!-- Display-block; */
+
+/* inline-block --> */
+
+/* p {
+    background-color: red;
+    display: inline-block;
+    width: 300px;
+}
+
+span {
+    display: block;
+    background-color: aqua;
+    width: 300px; */
+
+/* Псевдоклассы */
+
+span:first-child {
+    color: blue;
+}
+
+span:last-child {
+    color: brown;
+}
+
+span:nth-child(2) {
+    color: green;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Посещенные ссылки */
+
+a:visited {
+    color: mediumvioletred;
+}
+
+/* не посещенные сылки */
+
+a:link {
+    color: green;
+}
+
+a {
+    transition: all 1h;
+}
+
+a:hover {
+    background-color: orangered;
+    font-size: 30px;
+}
+
+/* Активные ссылки */
+
+a:active {
+    color: #000;
+}
+
+span::first-letter {
+    font-size: 16px;
+}
+
+p::first-line {
+    background-color: orangered;
+    font-size: 20px;
+    font-weight: 700s;
+}
+
+input::placeholder {
+    font-size: 20px;
+    background-color: blue;
+}
+
+#before-1::before {
+    content: 'Apple ';
+}
+
+#before-1::after {
+    content: ' M1';
+    font-weight: 700;
+}
+
+/* Content pered elementom */
+
+#after-1::before {
+    content: 'TOP ';
+}
+
+/* Content Posle elementa */
+
+#after-1::after {
+    content: ' RER';
+}
+
+.main-block {
+    width: 100%;
+    background: lightgray;
+}
+
+.navbar {
+    /* position: sticky; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: blue;
+    z-index: 2;
+}
+
+.first-div {
+    padding-top: 100px;
+}
+
+.content-block {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background: darkolivegreen;
+}
+
+.box {
+    left: 10px;
+    bottom: 10px;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    background: #000;
+}

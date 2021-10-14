@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: darkblue;
+}
+
+.desk {
+    width: 500px;
+    height: 25px;
+    background-color: darkorchid;
+    border-radius: 25px;
+    transform: rotate(-15deg);
+    animation-name: desk-move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes desk-move {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+.ball {
+    position: relative;
+    bottom: 100px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation-name: ball-move;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+.ball::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@keyframes ball-move {
+    from {
+        left: 400px;
+        transform: rotate(360deg);
+    }
+    to {
+        left: 0;
+        transform: rotate(0);
+    }
+}

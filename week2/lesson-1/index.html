@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- <div class="light">Светлый</div>
+    <div class="dark">
+        <div class="block"></div>
+    </div> -->
+    <div class="navbar">
+        <div class="container">
+            <div class="nav">
+                <div class="nav_left">
+                    <img class="nav_logo" src="https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png"
+                        alt="logo">
+                </div>
+                <div class="nav_toggler">
+                    <img class="nav_toggler-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+                        alt="burger-menu">
+                </div>
+                <div class="nav_right">
+                    <ul class="nav_list">
+                        <li class="nav_item">item</li>
+                        <li class="nav_item">item</li>
+                        <li class="nav_item">item</li>
+                        <li class="nav_item">item</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav_mobile">
+            <div class="nav_cancel">x</div>
+            <ul class="nav_list_mobile">
+                <li class="nav_item_mobile">item</li>
+                <li class="nav_item_mobile">item</li>
+                <li class="nav_item_mobile">item</li>
+                <li class="nav_item_mobile">item</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    let burgerIcon = document.querySelector('.nav_toggler-icon')
+    let nav_Mobile = document.querySelector('.nav_mobile')
+    let cancelIcon = document.querySelector('.nav_cancel')
+    burgerIcon.addEventListener('click', (e) => {
+        nav_Mobile.style.display = 'block'
+        e.target.style.display = 'none'
+    })
+    cancelIcon.addEventListener('click', (e) => {
+        burgerIcon.style.display = 'block'
+        navMobile.style.display = 'none'
+    })
+
+
+</script>
+
+</html>

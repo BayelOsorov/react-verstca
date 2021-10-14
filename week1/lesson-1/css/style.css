@@ -1,0 +1,32 @@
+/* Селекторы */
+* {
+    margin: 0px;
+    padding: 0;
+
+}
+h1 {
+    color: aqua;
+}
+h2 {
+    background: red;
+    color: #fff;
+}
+.first-div {
+    font-size: 24px;
+}
+.second-div {
+    font-size: 36px   ;
+    font-weight: 700;
+    border: 1px solid gray;
+    /* border-style: hidden; */
+}
+#first-image {
+    width: 500px;
+    height: 500px;
+}
+.div11 {
+    color: black;
+}
+.text {
+    color: blue;
+}
