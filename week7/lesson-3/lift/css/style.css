@@ -1,0 +1,21 @@
+.sq {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 400px;
+    bottom: 0px;
+}
+
+.gryp {
+    position: absolute;
+    left: 500px;
+}
+
+.btn {
+    background-color: grey;
+}
+
+.container11 {
+    height: 100%;
+    width: 100%;
+}
