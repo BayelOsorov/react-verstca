@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "name": "legion lenovo",
+      "price": "5000",
+      "desc": "best laptop",
+      "image": "https://www.kns.ru/linkpics/hp-omen-15-dc0007ur-0.jpg",
+      "id": 1
+    },
+    {
+      "name": "lenovo legion ",
+      "price": "5000",
+      "desc": "best laptop",
+      "image": "https://www.777555.by/content/thumb/items/img_1053596_big_1_800.jpg",
+      "id": 2
+    },
+    {
+      "name": "asus",
+      "price": "5000",
+      "desc": "best laptop",
+      "image": "https://static.onlinetrade.ru/img/items/b/905137_4.jpg",
+      "id": 3
+    },
+    {
+      "name": "asus v51",
+      "price": "5000",
+      "desc": "best laptop",
+      "image": "https://www.naifl.ru/photos/site/product/z00200825/photos/1_491x350.jpg",
+      "id": 4
+    },
+    {
+      "name": "acer2",
+      "price": "5000",
+      "desc": "best laptop",
+      "image": "https://img.dxcdn.com/productimages/sku_916529957_1.jpg",
+      "id": 5
+    },
+    {
+      "name": " acer 1",
+      "price": "5000",
+      "desc": "best laptop",
+      "image": "https://gomel.imarket.by/upload/c_img/898816/31bc024f7469ce9e2f1ab1961c02705f_680x460_w0_100.jpg",
+      "id": 6
+    },
+    {
+      "name": "asus",
+      "price": "5000",
+      "desc": "best laptop",
+      "image": "https://www.naifl.ru/photos/site/product/z00200825/photos/1_491x350.jpg",
+      "id": 4
+    },
+    {
+      "name": "acer",
+      "price": "5000",
+      "desc": "best laptop",
+      "image": "https://img.dxcdn.com/productimages/sku_916529957_1.jpg",
+      "id": 5
+    },
+    {
+      "name": " acer 1",
+      "price": "5000",
+      "desc": "best laptop",
+      "image": "https://gomel.imarket.by/upload/c_img/898816/31bc024f7469ce9e2f1ab1961c02705f_680x460_w0_100.jpg",
+      "id": 6
+    }
+  ]
+}
