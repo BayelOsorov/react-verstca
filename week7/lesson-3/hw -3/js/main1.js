@@ -1,5 +1,4 @@
 let currentPage = 1
-
 let api = `http://localhost:5000/contacts?_page=${currentPage}&_limit=3`
 let secondApi = 'http://localhost:5000/contacts'
 

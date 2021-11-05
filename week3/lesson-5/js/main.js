@@ -278,5 +278,5 @@
 // console.log(sum)
 
 
-let str = 'John Davisson'
-console.log(str.split())
+// let str = 'John Davisson'
+// console.log(str.split())

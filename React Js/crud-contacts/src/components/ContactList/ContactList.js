@@ -1,5 +1,4 @@
-
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button } from "react-bootstrap";
 
 const ContactList = (props) => {
 
@@ -15,7 +14,7 @@ const ContactList = (props) => {
                         <Card.Body>
                             <Card.Title>{item.name}</Card.Title>
                             <Card.Text>{item.phone}</Card.Text>
-                            <Button className='btn-card' variant="danger" onClick={() => props.handleDeleteContact(item.id)}>Delete</Button>
+                            <Card className='btn-card' variant="danger" onClick={() => props.handleDeleteContact(item.id)}>Delete</Card>
                             <Button onClick={() => props.handleEditIndex(index)}>Edit Contact</Button>
                         </Card.Body>
                     </Card>

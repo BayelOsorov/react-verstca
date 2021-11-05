@@ -1,37 +1,37 @@
-// let numArray = [1, 2, 3, 4, 5]
+// // let numArray = [1, 2, 3, 4, 5]
 
-// console.log(numArray[4]);
+// // console.log(numArray[4]);
 
-const guest = [{
-    name: 'Alice'
+// const guest = [{
+//     name: 'Alice'
 
-},
-{
-    name: 'John'
+// },
+// {
+//     name: 'John'
 
-},
-{
-    name: 'Rachel'
+// },
+// {
+//     name: 'Rachel'
 
-},
-{
-    name: 'Monkey'
+// },
+// {
+//     name: 'Monkey'
 
-},
-{
-    name: 'KeySon'
+// },
+// {
+//     name: 'KeySon'
 
-}]
-let newGuest = {
-    name: 'Alan'
-}
+// }]
+// let newGuest = {
+//     name: 'Alan'
+// }
 
-guest.push(newGuest)
+// guest.push(newGuest)
 
-guest.pop()
-console.log(guest);
+// guest.pop()
+// console.log(guest);
 
-let impGuest = { 'Jack'}
 
-guest.unshift(impGuest)
-console.log(guest);
+
+// guest.unshift(impGuest)
+// console.log(guest);

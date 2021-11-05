@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 
 
-
 const ContactCard = (props) => {
     let [name, setName] = useState(props.editContact.name)
     let [phone, setPhone] = useState(props.editContact.phone)
@@ -19,8 +18,8 @@ const ContactCard = (props) => {
         setName('')
         setPhone('')
         setImg('')
-
     }
+
     return (
         <div className=' content'>
 
