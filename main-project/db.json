@@ -1,0 +1,24 @@
+{
+  "phones": [
+    {
+      "name": "Dianaz",
+      "description": "hbhbhbhbhbhb",
+      "price": 87987987987,
+      "color": "vghvhgvgvv",
+      "image": "gvgvgvghvghvghv",
+      "brand": "gvhgvhgvhgvhgxv",
+      "model": "ghvgvghvgv",
+      "id": 2
+    },
+    {
+      "name": "hhjgghgjhghjghj",
+      "description": "ghjghjghjg",
+      "price": 78687678678,
+      "color": "vgv",
+      "image": "jhghjgjgjh",
+      "brand": "vhjvghvhgv",
+      "model": "ghvg",
+      "id": 3
+    }
+  ]
+}

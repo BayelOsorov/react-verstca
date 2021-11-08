@@ -1,9 +1,10 @@
+import MyRoutes from "./Routes";
 
 function App() {
   return (
-    <div>
-
-    </div>
+    <>
+      <MyRoutes />
+    </>
   );
 }
 
