@@ -1,0 +1,50 @@
+.main-header {
+    background: black;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    padding: 17px 0;
+    a{
+        text-decoration: none;
+
+    }
+    span {
+        color: gray;
+
+    }
+}
+
+.main-navbar {
+    background: #0F0F0F;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    a {
+    font-family: 'PT Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: gray;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 15px;
+        @media all and (max-width: 800px) {
+            font-size: 12px;
+        }
+        @media all and (max-width: 625px) {
+            font-size: 10px;
+        }
+    }
+    img {
+        margin-right: 15px;
+    }
+}

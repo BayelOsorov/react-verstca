@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+.section-parent {
+  background-color: #F4F5F6;
+}
+
+.section-2 {
+  margin-top: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 527px;
+  position: relative;
+}
+
+.section-2 .section-left .section-list .section-item {
+  width: 455px;
+  height: 179px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.section-2 .section-left .section-list .section-item-left {
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25px;
+}
+
+.section-2 .section-left .section-list .section-item-left h3 {
+  margin-left: 23px;
+}
+
+.section-2 .section-left .section-list .section-item:first-child {
+  margin-bottom: 30px;
+}
+
+.section-2 .section-left .section-list .section-item:nth-child(2) {
+  margin-left: 60px;
+}
+
+.section-2 .section-left .section-list .section-item:nth-child(3) {
+  margin-top: 30px;
+}
+
+.section-2 .section-left .section-list .section-item h3 {
+  color: #0F2336;
+  font-size: 25px;
+}
+
+.section-2 .section-left .section-list .section-item p {
+  font-size: 16px;
+  color: #576D81;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.section-2 .section-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section-right {
+    display: none !important;
+  }
+  .section-item {
+    width: 400px !important;
+    height: 150px !important;
+  }
+  .section-item h3 {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .section-2 {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    text-align: center !important;
+    margin-top: 100px !important;
+  }
+  .section-item:nth-child(2) {
+    margin: 0 !important;
+  }
+  .section-item {
+    width: 330px !important;
+  }
+  .section-item h3 {
+    font-size: 15px !important;
+  }
+  .section-item p {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .section-item {
+    width: unset !important;
+  }
+}
+/*# sourceMappingURL=Section2.css.map */

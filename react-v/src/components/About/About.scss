@@ -1,0 +1,23 @@
+.mainAbout {
+    // margin-top: 20%;
+    background: url('../../images/bg-pic.svg')  no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .text1 {
+        color: white;
+    }
+    .block {
+        padding-top: 100px;
+        width: 80%;
+        button {
+            margin-top: 20px;
+            margin-right: 20px;
+            border: none;
+            background: #0F0F0F;
+            color: white;
+            padding: 13px 18px;
+        }
+    }
+}

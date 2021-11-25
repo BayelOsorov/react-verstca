@@ -1,0 +1,105 @@
+@import '../../../variables/variables.scss' ;
+
+.navbar{
+    width: 100%;
+    // height: 40px;
+    margin-top: 20px;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+.nav-right {
+    display: flex;
+    justify-self: end;
+    align-items: center;
+     .nav-list {
+         display: flex;
+         align-items: center;
+     }
+        .nav-item {
+            margin-left: 69px;
+            list-style-type: none;
+            align-items: center;
+            font-weight: 700;
+            color: $blueColor;
+             button {
+                 background-color: $blueColor;
+                 padding: 16px 25px;
+                 border: none;
+                 color: #fff;
+                 border-radius: 8px;
+                 &:hover {
+                     background-color: #020b14;
+                     transition: all 0.5s;
+                     cursor: pointer;
+                 }
+             }
+        }
+}
+.burger {
+    width: 100vw;
+    position: sticky;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-color: $whiteGreyColor;
+     .close-btn {
+         background-color: unset;
+         border: unset;
+         font-size: 20px;
+         margin-left: 90%;
+     }
+     ul {
+         text-align: center;
+         padding-bottom: 20px;
+         li:first-child{
+             padding-left: 0;
+         }
+         li {
+             display: inline-block;
+             padding-left: 50px;
+             color: $blueColor ;
+             font-weight: 700;
+             cursor: pointer;
+         }
+     }
+}
+.burger-menu {
+    display: none;
+    border: none;
+    background-color: unset;
+}
+
+@media screen and(max-width: #{$tablet-width})  {
+    .navbar {
+        margin-top: 0 !important;
+    }
+    .nav-left img {
+        width: 80px !important;
+    }
+    .nav-list{
+        display: none !important;
+    }
+    .burger-menu {
+        display: block !important;
+    }
+}
+@media screen and(max-width: #{$mobileL-width})  {
+    .burger{
+        ul{
+            li {
+            font-weight: 300 !important;
+            }
+        }
+    }
+}
+@media screen and(max-width: #{$mobileS-width})  {
+ .burger{
+        ul{
+            li {
+            font-size: 11px !important;
+            }
+        }
+    }
+}

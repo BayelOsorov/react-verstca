@@ -1,0 +1,54 @@
+.seasonBlock {
+  background: black;
+}
+
+.seasonBlock .watchTwoBlocks {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seasonBlock .season {
+  padding-left: 17%;
+}
+
+.seasonBlock .newCollection {
+  position: absolute;
+  top: 160%;
+  left: 61%;
+}
+
+.seasonBlock .btnCatalog {
+  position: absolute;
+  top: 170%;
+  left: 70%;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.textCostum {
+  width: 480px;
+  text-align: center;
+  margin-top: 55px;
+}
+
+.collection2018 {
+  position: relative;
+  padding-left: 80px;
+}
+
+.line {
+  position: absolute;
+  top: 208%;
+  left: 72%;
+}
+
+.btnCollection {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=WatchesBlock.css.map */

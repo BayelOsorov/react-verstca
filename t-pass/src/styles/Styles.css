@@ -1,0 +1,21 @@
+@import url(c:\Bayel\makers\t-pass\src\components\Navbar\assets\Navbar.css);
+@import url(c:\Bayel\makers\t-pass\src\components\MainPageBody\assets\MainPageBody.css);
+@import url(c:\Bayel\makers\t-pass\src\components\HowDoesItWork\assets\HowDoesItWork.css);
+@import url(c:\Bayel\makers\t-pass\src\components\Section2\assets\Section2.css);
+@import url(c:\Bayel\makers\t-pass\src\components\Section3\assets\Section3.css);
+@import url(c:\Bayel\makers\t-pass\src\components\ContactUs\assets\ContactUs.css);
+@import url(c:\Bayel\makers\t-pass\src\components\Footer\assets\Footer.css);
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.h-100 {
+  height: 100%;
+}
+/*# sourceMappingURL=Styles.css.map */

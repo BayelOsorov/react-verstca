@@ -1,0 +1,60 @@
+@import '../../../variables/variables.scss' ;
+.how-does-section{
+    margin-top: 30px;
+    background-color: $whiteGreyColor;
+    height: 540px;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+     .how-does-right {
+         margin-top: 115px;
+         p:first-child {
+             margin-bottom: 22px;
+             margin-top: 0;
+         }
+         h1{
+             font-weight: 900;
+             font-size: 40px;
+             color:$blueColor
+         }
+         p  {
+             margin-top: 21px;
+             color: $greyColor;
+             max-width: 414px;
+         }
+         img {
+             margin-top: 50px;
+         }
+     }
+}
+@media screen and(max-width: #{$tablet-width}) {
+    .how-does-section{
+        grid-template-columns: 1fr !important;
+        height: auto !important;
+        text-align: center ;
+    }
+    .how-does-left {
+        img{
+            display: none !important;
+        }
+    }
+    .how-does-right {
+        margin-top: 0 !important;
+        padding: 30px  !important;
+         p{
+             margin: 21px auto;
+         }
+    }
+}
+@media screen and(max-width: #{$mobileL-width})  {
+
+        .how-does-section .how-does-right {
+        h1 {
+            font-size: 26px !important;
+        }
+        p {
+            font-size: 11px !important;
+        }
+    }
+}

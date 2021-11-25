@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+.navbar {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 1fr;
+      grid-template-columns: 150px 1fr;
+}
+
+.nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-right .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-right .nav-item {
+  margin-left: 69px;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  color: #0F2336;
+}
+
+.nav-right .nav-item button {
+  background-color: #0F2336;
+  padding: 16px 25px;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.nav-right .nav-item button:hover {
+  background-color: #020b14;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.burger {
+  width: 100vw;
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  top: 0;
+  left: 0;
+  background-color: #F4F5F6;
+}
+
+.burger .close-btn {
+  background-color: unset;
+  border: unset;
+  font-size: 20px;
+  margin-left: 90%;
+}
+
+.burger ul {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.burger ul li:first-child {
+  padding-left: 0;
+}
+
+.burger ul li {
+  display: inline-block;
+  padding-left: 50px;
+  color: #0F2336;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: none;
+  border: none;
+  background-color: unset;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin-top: 0 !important;
+  }
+  .nav-left img {
+    width: 80px !important;
+  }
+  .nav-list {
+    display: none !important;
+  }
+  .burger-menu {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .burger ul li {
+    font-weight: 300 !important;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .burger ul li {
+    font-size: 11px !important;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

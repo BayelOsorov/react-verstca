@@ -1,0 +1,12 @@
+.blockOfWathes {
+    position: relative;
+    background: #000;
+    text-align: center;
+    .watchesBlock {
+       padding-bottom: 100px;
+        width: 33.3333%;
+        img {
+            margin-right: 20px;
+        }
+    }
+}

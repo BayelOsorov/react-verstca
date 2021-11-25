@@ -1,0 +1,92 @@
+@import '../../../variables/variables.scss' ;
+.section-parent{
+    background-color: $whiteGreyColor;
+
+}
+.section-2 {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 527px;
+    position: relative;
+     .section-left {
+         .section-list{
+             .section-item{
+                width: 455px;
+                height: 179px;
+                background-color: #fff;
+                border-radius: 8px;
+                &-left{
+                    padding-top: 25px;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 25px;
+                    h3 {
+                        margin-left: 23px;
+                     }
+                }
+                 &:first-child{
+                     margin-bottom: 30px;
+                 }
+                 &:nth-child(2){
+                     margin-left: 60px;
+                 }
+                   &:nth-child(3){
+                     margin-top: 30px;
+                 }
+                 h3 {
+                     color: $blueColor;
+                     font-size: 25px;
+                 }
+                 p {
+                     font-size: 16px;
+                     color: $greyColor;
+                     text-align: center;
+                     margin-top: 25px;
+                 }
+             }
+         }
+        }
+        .section-right{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+}
+@media screen and(max-width: #{$tablet-width}) {
+    .section-right {
+        display: none !important;
+    }
+    .section-item{
+            width: 400px !important ;
+            height: 150px !important ;
+            h3 {
+                font-size: 20px !important ;
+            }
+    }
+}
+@media screen and(max-width: #{$mobileL-width})  {
+    .section-2 {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+        margin-top: 100px !important;
+    }
+ .section-item:nth-child(2){
+     margin: 0 !important;
+ }
+    .section-item{
+            width: 330px !important ;
+            h3 {
+                font-size: 15px !important ;
+            }
+            p{
+                font-size: 13px !important;
+            }
+    }
+}
+@media screen and(max-width: #{$mobileS-width})  {
+      .section-item{
+            width: unset !important ;
+
+    }
+}

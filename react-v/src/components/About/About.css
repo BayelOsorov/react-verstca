@@ -1,0 +1,28 @@
+.mainAbout {
+  background: url("../../images/bg-pic.svg") no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mainAbout .text1 {
+  color: white;
+}
+
+.mainAbout .block {
+  padding-top: 100px;
+  width: 80%;
+}
+
+.mainAbout .block button {
+  margin-top: 20px;
+  margin-right: 20px;
+  border: none;
+  background: #0F0F0F;
+  color: white;
+  padding: 13px 18px;
+}
+/*# sourceMappingURL=About.css.map */

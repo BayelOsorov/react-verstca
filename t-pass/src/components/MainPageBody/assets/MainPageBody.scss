@@ -1,0 +1,114 @@
+@import '../../../variables/variables.scss' ;
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.content-left {
+    margin-top: 120px;
+    h1{
+        font-size: 55px;
+        color: $blueColor;
+        span{
+            color: $greenColor;
+        }
+        span:last-child {
+            color: #F3AF47;
+        }
+        display: block;
+    }
+    button {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        padding: 19px 21px;
+        background-color: $greenColor;
+        border: none;
+        border-radius: 14px;
+        color : $blueColor;
+         img {
+             margin-left: 10px;
+         }
+         &:hover {
+             background-color: #1babab;
+             transition: all 1s;
+             cursor: pointer;
+         }
+    }
+}
+.content-right {
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.section1 {
+    margin-top: 100px;
+        .item-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+                .item {
+                    h3{
+                        margin-top: 18px;
+                        font-weight: 700;
+                        font-size: 25px;
+                        color: $blueColor;
+                        margin-bottom: 12px;
+                    }
+                    p {
+                        color: $greyColor;
+                        font-size: 16px;
+                        margin-bottom: 80px;
+                    }
+                }
+        }
+}
+@media screen and(max-width: #{$tablet-width}) {
+     .content-left {
+        h1{
+            font-size: 40px !important ;
+        }
+        button {
+            padding: 13px 14px !important;
+        }
+    }
+    .section1 {
+        .item-list{
+            grid-template-columns: 1fr  !important;
+             .item{
+                text-align: center;
+             }
+        }
+    }
+}
+@media screen and(max-width: #{$mobileL-width})  {
+.content {
+        grid-template-columns: 1fr !important;
+    }
+        .content-right img {
+            display: none !important ;
+        }
+        .content-left h1 {
+            font-size: 30px !important;
+        }
+        .content-left button {
+                padding: 6px 9px !important;
+                img {
+                    width: 20px !important;
+                }
+        }
+        .section1 {
+            .item{
+                img {
+                    width: 70px !important;
+                }
+                h3 {
+                    font-size: 20px !important;
+                }
+                p {
+                    font-size: 13px !important;
+                }
+            }
+        }
+    }

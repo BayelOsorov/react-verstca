@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+.how-does-section {
+  margin-top: 30px;
+  background-color: #F4F5F6;
+  height: 540px;
+  border-radius: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.how-does-section .how-does-right {
+  margin-top: 115px;
+}
+
+.how-does-section .how-does-right p:first-child {
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.how-does-section .how-does-right h1 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #0F2336;
+}
+
+.how-does-section .how-does-right p {
+  margin-top: 21px;
+  color: #576D81;
+  max-width: 414px;
+}
+
+.how-does-section .how-does-right img {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=HowDoesItWork.css.map */

@@ -1,0 +1,53 @@
+.blockOne {
+
+    .title {
+        position: absolute;
+        top: 82%;
+        left: 28%;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        width: 690px;
+    }
+}
+
+.middleLogo {
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    @media all and (max-width: 1060px) {
+        top: 29%;
+        left: 38%;
+        width: 290px;
+        height: 290px;
+    }
+
+    @media all and (max-width: 940px) {
+        top: 26%;
+        left: 35%;
+        width: 255px;
+        height: 255px;
+    }
+
+    @media all and (max-width: 790px) {
+        top: 25%;
+        left: 35%;
+        width: 215px;
+        height: 215px;
+    }
+
+    @media all and (max-width: 630px) {
+        top: 25%;
+        left: 35%;
+        width: 180px;
+        height: 180px;
+    }
+
+    @media all and (max-width: 520px) {
+        top: 26%;
+        left: 35%;
+        width: 130px;
+        height: 130px;
+    }
+
+}

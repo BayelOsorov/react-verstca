@@ -1,0 +1,13 @@
+.brandBlock {
+  text-align: center;
+  background: #0F0F0F;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.brandBlock .line3 {
+  position: absolute;
+  top: 42%;
+  left: 46%;
+}
+/*# sourceMappingURL=OurBrands.css.map */

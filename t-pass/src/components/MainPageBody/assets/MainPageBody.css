@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.content-left {
+  margin-top: 120px;
+}
+
+.content-left h1 {
+  font-size: 55px;
+  color: #0F2336;
+  display: block;
+}
+
+.content-left h1 span {
+  color: #00CCCC;
+}
+
+.content-left h1 span:last-child {
+  color: #F3AF47;
+}
+
+.content-left button {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  padding: 19px 21px;
+  background-color: #00CCCC;
+  border: none;
+  border-radius: 14px;
+  color: #0F2336;
+}
+
+.content-left button img {
+  margin-left: 10px;
+}
+
+.content-left button:hover {
+  background-color: #1babab;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.content-right img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section1 {
+  margin-top: 100px;
+}
+
+.section1 .item-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section1 .item-list .item h3 {
+  margin-top: 18px;
+  font-weight: 700;
+  font-size: 25px;
+  color: #0F2336;
+  margin-bottom: 12px;
+}
+
+.section1 .item-list .item p {
+  color: #576D81;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-left h1 {
+    font-size: 40px !important;
+  }
+  .content-left button {
+    padding: 13px 14px !important;
+  }
+  .section1 .item-list {
+    -ms-grid-columns: 1fr  !important;
+        grid-template-columns: 1fr  !important;
+  }
+  .section1 .item-list .item {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .content {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  .content-right img {
+    display: none !important;
+  }
+  .content-left h1 {
+    font-size: 30px !important;
+  }
+  .content-left button {
+    padding: 6px 9px !important;
+  }
+  .content-left button img {
+    width: 20px !important;
+  }
+  .section1 .item img {
+    width: 70px !important;
+  }
+  .section1 .item h3 {
+    font-size: 20px !important;
+  }
+  .section1 .item p {
+    font-size: 13px !important;
+  }
+}
+/*# sourceMappingURL=MainPageBody.css.map */

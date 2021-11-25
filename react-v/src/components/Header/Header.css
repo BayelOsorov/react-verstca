@@ -1,0 +1,65 @@
+.main-header {
+  background: black;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  padding: 17px 0;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header span {
+  color: gray;
+}
+
+.main-navbar {
+  background: #0F0F0F;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+.navbar a {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+@media all and (max-width: 800px) {
+  .navbar a {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 625px) {
+  .navbar a {
+    font-size: 10px;
+  }
+}
+
+.navbar img {
+  margin-right: 15px;
+}
+/*# sourceMappingURL=Header.css.map */

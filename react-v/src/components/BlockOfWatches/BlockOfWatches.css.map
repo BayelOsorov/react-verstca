@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,MAAM;CAQrB;;AAXD,AAII,cAJU,CAIV,aAAa,CAAC;EACX,cAAc,EAAE,KAAK;EACpB,KAAK,EAAE,QAAQ;CAIlB;;AAVL,AAOQ,cAPM,CAIV,aAAa,CAGT,GAAG,CAAC;EACA,YAAY,EAAE,IAAI;CACrB",
+    "sources": [
+        "BlockOfWatches.scss"
+    ],
+    "names": [],
+    "file": "BlockOfWatches.css"
+}
