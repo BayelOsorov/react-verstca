@@ -4,7 +4,6 @@ import { Formik } from 'formik';
 import { Button, TextField } from '@mui/material';
 import { useNavigate, useParams } from 'react-router';
 import { adminContext } from '../contexts/AdminContext';
-import { InsertInvitation } from '@mui/icons-material';
 const EditPage = () => {
     const schema = yup.object({
         name: yup.string().min(3).max(30).required('Обязательна для заполнения'),
@@ -23,14 +22,16 @@ const EditPage = () => {
 
         model: yup.string().min(1, 'Минимальное количество букв 3').max(30, 'Максимальное количество символов 30').required('Поле обязательно для заполнения'),
     })
-    const { getPhoneToEdit, phoneToEdit, saveEditedPhone } = useContext(adminContext)
+    const { getPhoneToEdit, phoneToEdit, saveEditedPhone, clearProductEdit } = useContext(adminContext)
 
     const params = useParams()
+    useEffect(() => {
+        clearProductEdit()
+    }, [])
     useEffect(() => {
         getPhoneToEdit(params.id)
     }, [])
     const navigate = useNavigate()
-
     return (
         <div className='edit-page' >
             <h2>Редактирование телефона</h2>

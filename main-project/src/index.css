@@ -21,17 +21,55 @@ a {
   align-items: center;
 }
 
-.add-page, .edit-page form {
+.add-page form, .edit-page form {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.add-page, .edit-page form input {
+.add-page form input, .edit-page form input {
   margin: 5px;
 }
 
-.add-page, .edit-page form button:last-child {
+.add-page form button:last-child, .edit-page form button:last-child {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+/* Main Page */
+
+.main-page {
+  /* display: flex; */
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.phones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.detail-image {
+  text-align: center;
+}
+
+.character strong {
+  width: 100px;
+  display: inline-block;
+}
+
+.detail-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination ul {
+  display: flex;
+  list-style-type: none;
 }

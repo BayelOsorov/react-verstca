@@ -15,6 +15,13 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import { useNavigate } from 'react-router';
+import { clientContext } from '../contexts/ClientContext';
+import { ShoppingCart } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
+import { authContext } from '../contexts/AuthContext';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -31,7 +38,6 @@ const Search = styled('div')(({ theme }) => ({
         width: 'auto',
     },
 }));
-
 const SearchIconWrapper = styled('div')(({ theme }) => ({
     padding: theme.spacing(0, 2),
     height: '100%',
@@ -57,8 +63,18 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function Navbar() {
+    const navigate = useNavigate()
+    const { authWithGoogle, user, logOut } = React.useContext(authContext)
+    const { getPhones, phonesCountInCart } = React.useContext(clientContext)
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+    let obj = new URLSearchParams(window.location.search)
+    const filterPhones = (key, value) => {
+        obj.set(key, value)
+        let newUrl = `${window.location.pathname}?${obj.toString()}`
+        navigate(newUrl)
+        getPhones()
+    }
 
     const isMenuOpen = Boolean(anchorEl);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -167,19 +183,29 @@ export default function Navbar() {
                     >
                         <MenuIcon />
                     </IconButton>
+
                     <Typography
+                        onClick={() => {
+                            navigate('/')
+                            getPhones()
+                        }}
+                        style={{ cursor: 'pointer' }}
                         variant="h6"
                         noWrap
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}
                     >
-                        MUI
+                        GANG STORE
                     </Typography>
+
                     <Search>
                         <SearchIconWrapper>
                             <SearchIcon />
                         </SearchIconWrapper>
                         <StyledInputBase
+                            onChange={(e) => {
+                                filterPhones(`q`, e.target.value)
+                            }}
                             placeholder="Search…"
                             inputProps={{ 'aria-label': 'search' }}
                         />
@@ -187,9 +213,11 @@ export default function Navbar() {
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-                            <Badge badgeContent={4} color="error">
-                                <MailIcon />
-                            </Badge>
+                            <Link to='/cart' >
+                                <Badge badgeContent={phonesCountInCart} color="error">
+                                    <ShoppingCart />
+                                </Badge>
+                            </Link>
                         </IconButton>
                         <IconButton
                             size="large"
@@ -200,7 +228,7 @@ export default function Navbar() {
                                 <NotificationsIcon />
                             </Badge>
                         </IconButton>
-                        <IconButton
+                        {/* <IconButton
                             size="large"
                             edge="end"
                             aria-label="account of current user"
@@ -210,7 +238,28 @@ export default function Navbar() {
                             color="inherit"
                         >
                             <AccountCircle />
-                        </IconButton>
+                        </IconButton> */}
+                        {
+                            user ? (
+                                <>
+                                    <Typography variant='h6' component='div' style={{ display: 'flex', alignItems: 'center' }} >{user.displayName}</Typography>
+                                    <IconButton
+                                        size="large"
+                                        edge="end"
+                                        aria-label="account of current user"
+                                        aria-controls={menuId}
+                                        aria-haspopup="true"
+                                        color="inherit"
+                                        onClick={logOut}
+                                    >
+                                        <LogoutIcon />
+                                    </IconButton>
+                                </>
+                            ) : (
+                                <Button onClick={authWithGoogle} variant='text' color='inherit' >Войти</Button>
+                            )
+                        }
+
                     </Box>
                     <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                         <IconButton

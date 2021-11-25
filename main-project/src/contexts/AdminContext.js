@@ -1,4 +1,3 @@
-import { TrySharp } from '@mui/icons-material';
 import axios from 'axios';
 import React, { useReducer } from 'react';
 import { API } from '../helpers/const';
@@ -14,6 +13,8 @@ const reducer = (state = INIT_STATE, action) => {
             return { ...state, phones: action.payload }
         case 'GET_PHONE_TO_EDIT':
             return { ...state, phoneToEdit: action.payload }
+        case 'CLEAR_PRODUCT_EDIT':
+            return { ...state, phoneToEdit: null }
         default: return state
     }
 }
@@ -54,10 +55,16 @@ const AdminContextProvider = (props) => {
             console.log(e)
         }
     }
+    const clearProductEdit = () => {
+        dispatch({
+            type: 'CLEAR_PRODUCT_EDIT'
+        })
+    }
     const saveEditedPhone = async (editedPhone) => {
         try {
             const { data } = await axios.patch(`${API}/${editedPhone.id}`, editedPhone)
             getPhones()
+            clearProductEdit()
         }
         catch (e) {
             console.log(e);
@@ -79,6 +86,7 @@ const AdminContextProvider = (props) => {
                 addPhone,
                 getPhones,
                 getPhoneToEdit,
+                clearProductEdit,
                 saveEditedPhone,
                 deletePhone,
                 phones: state.phones,
