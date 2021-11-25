@@ -15,7 +15,11 @@ const BlockOne = () => {
         />
         <img className="middleLogo" src={middleLogo} alt="" />
         <p className='title'>
-          Помимо текстовых описаний мы также предлагаем вашему вниманию фото и видео обзоры наручных часов. Это позволит выбрать самый стильный и наиболее подходящий вам вариант, ведь всегда лучше один раз увидеть покупаемую вещь, чем много раз о ней прочитать, пусть даже очень подробно. На видео вы можете рассмотреть, насколько современной и актуальной выглядит ваша планируемая покупка, и так вам будет гораздо легче представить, как выбранные часы будут смотреться на вашей руке. В нашем интернет-магазине вы найдете продукцию и ее описания не только для мужчин – обзоры и описания женских часов здесь тоже есть, и они не менее подробны, чем предназначенные для представителей сильного пола.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+          interdum purus, est tortor pulvinar ut in. Fringilla a diam enim sed
+          justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis.
+          Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi.
+          Tortor nibh magna feugiat id nunc, dui nisl viverra.
         </p>
       </div>
     </div>
